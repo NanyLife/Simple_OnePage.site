@@ -1,0 +1,920 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0a1428;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+:root {
+    --primary: #00f0ff;
+    --secondary: #00c4ff;
+    --dark: #0a1428;
+    --darker: #081020;
+    --light: #ffffff;
+}
+
+/* Header */
+header {
+    background: #081020;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    letter-spacing: 1px;
+    display: inline-block;
+    padding-right: 910px;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #00c4ff, #00f0ff);
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+}
+
+/* Hero Section */
+.hero {
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgo8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMDAxNDI4IiAvPgo8bGluZSB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSIgc3Ryb2tlPSJyZ2JhKDAsMjQwLDI1NSwwLjEpIi8+CjxsaW5lIHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSIgc3Ryb2tlPSJyZ2JhKDAsMjQwLDI1NSwwLjEpIi8+CjxsaW5lIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIiBzdHJva2U9InJnYmEoMCwyNDAsMjU1LDAuMSkiLz4KPGxpbmUgeDE9IjEwMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIiBzdHJva2U9InJnYmEoMCwyNDAsMjU1LDAuMSkiLz4KPC9zdmc+') repeat;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--light);
+}
+
+.tagline {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.tagline::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--primary);
+    margin: 1rem auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 240, 255, 0.1);
+}
+
+/* Experience Section */
+.experience {
+    padding: 4rem 2rem;
+    background: #081020;
+}
+
+.experience h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #0a1428;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgba(0, 240, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 240, 255, 0.1);
+}
+
+.card .icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.card p {
+    color: #ccc;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.btn-small {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-small:hover {
+    background: rgba(0, 240, 255, 0.1);
+}
+
+/* Why H0HLAND? */
+.why {
+    padding: 4rem 2rem;
+    background: #0a1428;
+}
+
+.why h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.features {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #081020;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgba(0, 240, 255, 0.1);
+}
+
+.feature .icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.feature p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Trust Section */
+.trust {
+    padding: 4rem 2rem;
+    background: #081020;
+}
+
+.trust h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary);
+    display: block;
+}
+
+.stat p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.badge {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: rgba(0, 240, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+blockquote {
+    text-align: center;
+    font-style: italic;
+    color: #ccc;
+    margin: 2rem auto;
+    max-width: 600px;
+    font-size: 0.9rem;
+}
+
+blockquote cite {
+    display: block;
+    color: var(--primary);
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-style: normal;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    background: #0a1428;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    text-align: center;
+    width: 250px;
+}
+
+.info-item .icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.info-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.info-item p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background: #081020;
+    padding: 2rem;
+    border-top: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.messengers {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.messengers span {
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icons span {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    border-radius: 50%;
+    background: rgba(0, 240, 255, 0.1);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.legal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.legal a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    color: #777;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* === BOOKING PANEL === */
+.booking-panel {
+    background: #081020;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.4s ease;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.booking-panel.open {
+    max-height: 2000px;
+    opacity: 1;
+    padding: 2rem 0;
+}
+
+.booking-panel .container {
+    padding: 0 2rem;
+}
+
+.booking-panel h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.booking-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: rgba(0, 20, 40, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.summary-item, .summary-total {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.summary-total {
+    margin-left: auto;
+    font-size: 1.3rem;
+}
+
+.booking-zone {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: #0a1428;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 240, 255, 0.1);
+}
+
+.booking-zone h3 {
+    color: var(--secondary);
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Сетка мест */
+.seats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8rem;
+}
+
+.seat-btn {
+    aspect-ratio: 1 / 1;
+    background: #091224;
+    border: 2px solid #444;
+    border-radius: 6px;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seat-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.seat-btn.selected {
+    background: rgba(0, 240, 255, 0.15);
+    border-color: var(--primary);
+    color: var(--primary);
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+/* Комнаты */
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+}
+
+.room {
+    background: #091224;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+}
+
+.room h4 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.room-seats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.room-seat {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #091224;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #aaa;
+}
+
+.room-seat:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.room-seat.selected {
+    background: rgba(0, 240, 255, 0.15);
+    border-color: var(--primary);
+    color: var(--primary);
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+/* Форма */
+.booking-form {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px dashed rgba(0, 240, 255, 0.2);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.65rem;
+    background: #081020;
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 240, 255, 0.2);
+}
+
+.quick-date {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.date-btn {
+    background: #091224;
+    border: 1px solid #3a3a3a;
+    color: #aaa;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.date-btn:hover {
+    background: #0a1428;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.full-width {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Modal for "Написать" */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background: #0a1428;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: slideUp 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #aaa;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close:hover {
+    color: var(--primary);
+}
+
+.modal-subtitle {
+    text-align: center;
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: transform 0.2s, opacity 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.social-btn span {
+    font-size: 1.2rem;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background: #081020;
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 100px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 240, 255, 0.2);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo {
+        padding-right: 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .cards,
+    .features,
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .feature,
+    .info-item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .legal {
+        align-items: center;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        padding: 1.5rem;
+    }
+
+    .social-links {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-summary {
+        flex-direction: column;
+    }
+
+    .summary-total {
+        margin-left: 0;
+    }
+
+    .seats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .room-seat {
+        width: 30px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-date {
+        flex-wrap: wrap;
+    }
+
+    .date-btn {
+        flex: 1;
+        min-width: 100px;
+    }
+}
+
+
+
+/* === THANK YOU MODAL === */
+.modal-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.payment-methods {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.payment-methods h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.payment-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #091224;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 240, 255, 0.1);
+    font-size: 0.95rem;
+}
+
+.payment-item span:first-child {
+    font-size: 1.3rem;
+}
+
+#receiptForm {
+    margin-top: 1rem;
+}
+
+.modal-footer-note {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Close button for thank-you modal */
+.close-thank-you {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #aaa;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-thank-you:hover {
+    color: var(--primary);
+}
