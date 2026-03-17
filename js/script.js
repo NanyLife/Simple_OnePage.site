@@ -360,6 +360,6 @@ window.addEventListener('click', (e) => {
     }
 
 
-    // Первая отрисовка
+    
     updateUI();
 });
